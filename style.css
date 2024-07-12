@@ -1,0 +1,124 @@
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Estilos gerais */
+body {
+    font-family: "Press Start 2P", system-ui;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: #0066b9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo-img {
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+header .subtitulo {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 32%;
+    border-radius: 5px;
+}
+
+/* Seções */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+
+}
+
+.whatsapp-link {
+    color: #0877ed;
+    text-decoration: none;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+    background-color: #08e7f7;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #0066b9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
