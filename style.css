@@ -1,130 +1,342 @@
 
 
-/* Reset básico */
-* {
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-/* Estilos gerais */
-body {
-    font-family: "Press Start 2P", system-ui;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-}
-
 /* Cabeçalho */
 header {
-    background: #0066b9;
+    background: #1774aa;
     color: #fff;
     padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    flex: 0 1 auto;
+}
+
+header .logo img {
+    height: 100px; /* Ajuste conforme necessário para o tamanho desejado */
+    width: auto;
+    border-radius: 30%;
+    flex: 0 1 auto;
+    margin-left: 20px;
+}
+
+header .contact-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Sobe a navbar */
+    margin-top: -30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #f00;
+    transition: width 0.3s;
+    bottom: -5px;
+    left: 0;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: #f00;
+}
+
+header .contact-info {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-align: right;
+}
+
+.titulo {
+    margin-bottom: 3px; /* Ajusta a margem inferior para diminuir o espaçamento */
     text-align: center;
 }
 
-header .logo-img {
-    vertical-align: middle;
-    margin-right: 30px;
+hr.separador {
+    border: none;
+    height: 8px;
+    background-color: #333;
+    margin: 3px 0;
 }
 
-header h1 {
-    margin-bottom: 10px;
-    vertical-align: middle;
+.background-services {
+    background-image: url('./pexels-paduret-1476321.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Para garantir que o texto seja legível */
+    padding: 60px 20px; /* Aumenta o padding para dar mais espaço ao conteúdo */
+    margin: 3px 0;
 }
 
-header .subtitulo {
-    display: block;
-    font-size: 0.8em;
-    margin-top: 5px;
+.background-services h2,
+.background-services p {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.background-about {
+    background-image: url('./pexels-pixabay-416405.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Para garantir que o texto seja legível */
+    padding: 60px 20px; /* Aumenta o padding para dar mais espaço ao conteúdo */
+    margin: 10px 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+.background-about h2,
+.background-about p {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente para melhorar a legibilidade */
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-nav ul li a {
+/* Banner Principal */
+#banner {
+    background-image: url('./pexels-pixabay-257886.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    color: #fff; /* Define a cor do texto para branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 100px 20px; /* Adiciona espaço ao redor do conteúdo */
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+    max-width: 1200px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
     color: #fff;
     text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.image-container img {
-    width: 32%;
     border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
 
 /* Seções */
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 50px 0;
 }
 
 section h2 {
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-section a {
-    color: #007bff;
-    text-decoration: none;
+#services {
+    background-color: #f4f4f4;
+    padding: 50px 0;
 }
 
-section a:hover {
-    text-decoration: underline;
-
+#services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adiciona espaçamento entre as caixas */
 }
 
-.whatsapp-link {
-    color: #0877ed;
-    text-decoration: none;
+.service-item {
+    flex: 1 1 calc(33.333% - 40px); /* Para garantir três itens por linha */
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
-.whatsapp-link:hover {
-    text-decoration: underline;
-    background-color: #08e7f7;
+.service-item p {
+    color: #030303;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    margin-top: 0;
+    color: #1774aa;
+}
+
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#contato {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+#contato .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 50px; /* Adiciona espaçamento entre as caixas */
+}
+
+.contato-item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: center;
+}
+
+.contato-item p {
+    color: #030303;
+}
+
+.contato-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background: #0066b9;
+    background: #1774aa;
     color: #fff;
-    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.hidden {
-    display: none;
+footer .social-media {
+    margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 8px; /* Reduzir tamanho da fonte para telas menores */
+@media only screen and (max-width: 768px) {
+    header .logo img {
+        height: 50px; /* Diminui o tamanho da logo */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        font-size: 5px; /* Diminui o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+        padding: 10px; /* Adiciona um pouco de padding para melhorar a aparência */
+    }
+
+    .contact-info p {
+        margin: 5px 0; /* Reduz a margem entre os elementos */
+    }
+
+    .contato-item {
+        width: 80px; /* Define uma largura fixa para os itens de contato */
+        height: 80px; /* Define uma altura fixa para os itens de contato */
+        margin: 10px; /* Adiciona margem entre os itens */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato-item img {
+        width: 40px; /* Ajusta a largura das imagens */
+        height: 40px; /* Ajusta a altura das imagens */
+    }
+
+    #contato .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo {
+        background-color: #f4f4f4; /* Define uma cor de fundo clara para a seção de título */
+        padding: 20px 10px; /* Ajusta o padding para dispositivos móveis */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #titulo h2 {
+        font-size: 24px; /* Ajusta o tamanho da fonte para melhor visualização em telas pequenas */
+        color: #1774aa; /* Define uma cor de texto que contraste bem com o fundo */
     }
 }

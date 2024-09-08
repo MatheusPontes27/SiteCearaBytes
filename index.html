@@ -1,75 +1,139 @@
+
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja de Computadores</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>CearáBytes | Seu parceiro de confiança em tecnologia</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon/favicon-32x32.png" type="image/x-icon">
-    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1><img src="./logocearabytes - Copia.png" width="10%" height="10%" class="logo-img">Bem Vindo a CearáBytes<br>
-        <span class="subtitulo">Seu parceiro de confiança em tecnologia.</span>
-        </h1>
-        <br></br>
-        <nav>
-            <ul>
-                <li><a href="#servicos" id="servicos-link">Serviços</a></li>
-                <li><a href="#sobre" id="sobre nós-link">Sobre Nós</a></li>
-                <li><a href="#contato" id="contato-link">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        
-        <div class="image-container">
-            <img src="./ChatOn image.jpeg" alt="Imagem 1">
-            <img src="./ChatOn image (2).jpeg" alt="Imagem 2">
-            <img src="./ChatOn image (3).jpeg" alt="Imagem 3">
+        <div class="container">
+            <div class="logo">
+                <img src="./Logo New (1).png" alt="CearáBytes">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <p>(88) 98175-7203</p>
+                <p>comercial@cearabytes.com.br</p>
+            </div>
         </div>
+    </header>
 
-        <section id="servicos" class="hidden">
-            <h3>Na CearáBytes, oferecemos uma gama completa de serviços especializados para garantir que seu computador ou notebook funcione perfeitamente. Veja abaixo uma descrição detalhada de nossos serviços:</h3><br>
-            <p>1. Formatação de Computadores e Notebooks:<br><br>
-                • <b>Sistemas Operacionais:</b> Realizamos formatação e reinstalação de sistemas operacionais Windows e macOS. Seja para resolver problemas de desempenho ou para começar do zero, garantimos uma configuração otimizada e segura.<br><br>
-                • <b>Backup e Restauração de Dados:</b> Antes da formatação, realizamos o backup dos seus dados importantes e, após a reinstalação do sistema, restauramos esses dados para que você não perca nada.
-            </p><br><br>
-            <p>2. Limpeza e Troca de Pasta Térmica:<br><br>
-                • <b>Limpeza Interna:</b> Realizamos a limpeza completa do interior do seu computador ou notebook, removendo poeira e sujeira acumulada que podem causar superaquecimento e diminuir a vida útil dos componentes.<br><br>
-                • <b>Troca de Pasta Térmica:</b> Substituímos a pasta térmica do processador e, se necessário, da placa de vídeo, garantindo uma dissipação de calor eficiente e evitando problemas de aquecimento.
-            </p><br><br>    
-            <p>3. Upgrade de Hardware:<br><br>
-                • <b>Memória RAM:</b> Aumentamos a capacidade de memória RAM do seu sistema para melhorar o desempenho e a capacidade de multitarefa. Realizamos a instalação e configuração correta dos novos módulos de memória.<br><br>
-                • <b>Rígido (HDD):</b> Oferecemos a substituição ou adição de discos rígidos (HDD) para expandir a capacidade de armazenamento. Também instalamos unidades de estado sólido (SSD) para uma melhoria significativa na velocidade do sistema.
-            </p><br><br>
-            <p>4. Diagnóstico e Consultoria:<br><br>
-                • <b>Diagnóstico Completo:</b> Realizamos uma análise completa do seu sistema para identificar problemas e oferecer soluções eficazes.
-                • <b>Personalizada:</b> Fornecemos orientações e recomendações personalizadas para upgrades e melhorias, baseadas nas suas necessidades e no uso do seu computador ou notebook.
-            </p>
-        </section>
-        
-        <section id="sobre" class="hidden">
-            <h3>Sobre Nós</h3><br><br>
-            <p>A CearáBytes foi fundada em junho de 2024 na cidade de Ipueiras/CE por Matheus Emmanuel Maciel Pontes, que também atua como CEO e responsável técnico da empresa. Matheus está atualmente se formando como engenheiro de software e possui uma sólida formação em cursos técnicos de manutenção de computadores e desenvolvimento web, obtidos na IFPB do Rio Grande do Sul e no SENAI de Campina Grande/PB.<br><br>
+    <!-- Banner Principal -->
+    <section id="banner">
+        <div class="container">
+            <h1>Bem-vindo à CearáBytes</h1>
+            <p>Seu parceiro de confiança em tecnologia !</p><br>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </div>
+    </section>
 
-                Nosso compromisso é oferecer serviços especializados em montagem, manutenção e formatação de computadores e notebooks, com foco em sistemas Windows e macOS. Com uma abordagem centrada na qualidade e na satisfação do cliente, buscamos proporcionar soluções tecnológicas eficientes e confiáveis para nossos clientes em Ipueiras e região.<br><br>
-                
-                Se precisar de mais alguma informação ou ajuste, estou à disposição para ajudar!</p>
-        </section>
-        
-        <section id="contato" class="hidden">
-            <h2>Contato</h2>
-            <p>Telefone:<a href="https://wa.me/+5588981757203" target="_blank" class="whatsapp-link">(88) 98175-7203</a></p>
-            <p>Email: <a href="#" id="email-link" onclick="copiarEmail(); return false;">matheusemmanuel71@gmail.com</a></p>
-        </section>
-    </main>
+    <hr class="separador">
 
+    <!-- titulo da secao -->
+    <section id="titulo" class="titulo">
+             <h2>Nossos Serviços</h2>
+    </section>
+
+    <!-- Seções Principais -->
+    <section id="services" class="background-services">
+        <div class="container">
+            <div class="service-item">
+                <h3>Upgrade de Hardware</h3>
+                <p>Melhore o desempenho do seu desktop ou notebook com nossos serviços de upgrade de hardware. Atualizamos memória RAM, HDDs, SSDs, placas gráficas e mais.</p>
+            </div>
+            <div class="service-item">
+                <h3>Formatação</h3>
+                <p>Reinstale o sistema operacional do seu computador de forma segura e eficiente. Garantimos que todos os seus dados importantes sejam devidamente respaldados antes da formatação.</p>
+            </div>
+            <div class="service-item">
+                <h3>Limpeza e Troca de Pasta Térmica</h3>
+                <p>Evite superaquecimento e mantenha seu computador funcionando de maneira eficiente com nossos serviços de limpeza e troca de pasta térmica.</p>
+            </div>
+            <div class="service-item">
+                <h3>Venda de Acessórios</h3>
+                <p>Encontre uma variedade de acessórios para o setor de informática, incluindo mouses, teclados, cabos, adaptadores e muito mais.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <!-- titulo da secao -->
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+    </section>
+
+    <section id="about" class="background-about">
+        <div class="container">
+            <p>A CearáBytes é uma empresa dedicada a fornecer soluções completas e confiáveis para manutenção de computadores e desenvolvimento web. Fundada por Matheus Emmanuel Maciel Pontes, nossa missão é garantir que nossos clientes recebam o melhor atendimento e suporte técnico, utilizando as mais recentes tecnologias e práticas do mercado.</p>
+            <p>Estamos localizados em Ipueiras, Ceará, e atendemos clientes em toda a região, oferecendo serviços de alta qualidade e personalizados para atender às necessidades individuais de cada um.</p>
+            <p>Com uma equipe qualificada e comprometida, a CearáBytes se destaca pela excelência no serviço e pela satisfação dos nossos clientes.</p>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <section id="about" class="about">
+        <h2>Contato</h2>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="background-contato">
+        <div class="container">
+            <div class="contato-item">
+              <p>
+                <a href="https://www.instagram.com/cearabytes/" target="_blank">
+                    <img src="./instagram.png" width="50px" height="50px" alt="Instagram">
+                </a>
+              </p>
+            </div>
+            <div class="contato-item">
+                <p>
+                  <a href="https://www.facebook.com/profile.php?id=61563199433038" target="_blank">
+                      <img src="./logotipo-do-aplicativo-do-facebook.png" width="50px" height="50px" alt="Facebook">
+                  </a>
+                </p>
+            </div>
+            <div class="contato-item">
+                <p>
+                  <a href="http://wa.me/5588981757203" target="_blank">
+                      <img src="./whatsapp.png" width="50px" height="50px" alt="Whatsapp">
+                  </a>
+                </p>
+            </div>
+            <div class="contato-item">
+                <p>
+                  <a href="mailto:comercial@cearabytes.com.br" target="_blank">
+                      <img src="./e-mail (1).png" width="50px" height="50px" alt="Email">
+                  </a>
+                </p>
+            </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 CearáBytes. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 CearáBytes. Todos os direitos reservados.</p>
+            <div class="social-media">
+                <!-- Ícones de redes sociais -->
+            </div>
+        </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
+
