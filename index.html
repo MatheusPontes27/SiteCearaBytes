@@ -1,139 +1,212 @@
 
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CearáBytes | Seu parceiro de confiança em tecnologia</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>CearáBytes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="./Logo Cearabytes.png" alt="CearáBytes">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="contact-info">
-                <p>(88) 98175-7203</p>
-                <p>comercial@cearabytes.com.br</p>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">CearáBytes</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#articles">Portfólio</a></li>
+                <li><a href="#pricing">Tabela de Preços</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
+            <button class="btn primary-btn" onclick="window.location.href='https://wa.me/+5588981757203';" >Solicitar Orçamento</button>
+        </nav>
+        <div class="hero">
+            <h1>Inovação e Tecnologia que Transformam Resultados</h1><br><br>
+            <p>Cuidamos da sua tecnologia para você focar no essencial</p><br>
+            <div class="hero-buttons">
+                <button class="btn secondary-btn">Simule Agora</button>
+                <button class="btn thirdy-btn">Saiba mais</button>
             </div>
         </div>
     </header>
 
-    <!-- Banner Principal -->
-    <section id="banner">
-        <div class="container">
-            <h1>Bem-vindo à CearáBytes</h1>
-            <p>Seu parceiro de confiança em tecnologia !</p><br>
-            <a href="#contato" class="btn">Entre em Contato</a>
+    <section class="services">
+        <div class="service-item">
+            <i class="service-icon">🔒</i>
+            <h3>Segurança</h3>
+            <p>Todos os serviços são feitos com os melhores técnicos na área, sempre com total transparência com o cliente.</p>
+        </div>
+        <div class="service-item">
+            <i class="service-icon">🛡️</i>
+            <h3>Garantia</h3>
+            <p>Todo e qualquer serviço efetuado conosco, sem o rompimento do lacre de serviço, possui até 90 dias de garantia.</p>
+        </div>
+        <div class="service-item">
+            <i class="service-icon">💯</i>
+            <h3>100% Satisfação</h3>
+            <p>Estamos aqui para fornecer o melhor atendimento e satisfação ao nosso cliente</p>
         </div>
     </section>
 
-    <hr class="separador">
-
-    <!-- titulo da secao -->
-    <section id="titulo" class="titulo">
-             <h2>Nossos Serviços</h2>
-    </section>
-
-    <!-- Seções Principais -->
-    <section id="services" class="background-services">
-        <div class="container">
-            <div class="service-item">
-                <h3>Upgrade de Hardware</h3>
-                <p>Melhore o desempenho do seu desktop ou notebook com nossos serviços de upgrade de hardware. Atualizamos memória RAM, HDDs, SSDs, placas gráficas e mais.</p>
+    <section class="testimonials">
+        <h2>Nossos Clientes</h2><br>
+        <p>Depoimentos dos nossos clientes referente ao serviço prestado por nossos técnicos</p>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="./CSS/IMG/prisc.jpg" width="50px" class="avatar" alt="Avatar">
+                <h3>Priscilla Cavalcante</h3>
+                <p>Designer</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"O atendimento da CearáBytes foi excepcional! A equipe resolveu rapidamente um problema complexo no meu computador e ainda realizou um upgrade significativo na memória. Estou muito satisfeito com o serviço e recomendo a todos!"</p>
             </div>
-            <div class="service-item">
-                <h3>Formatação</h3>
-                <p>Reinstale o sistema operacional do seu computador de forma segura e eficiente. Garantimos que todos os seus dados importantes sejam devidamente respaldados antes da formatação.</p>
+            <div class="testimonial">
+                <img src="./CSS/IMG/homem1.jpg" class="avatar" alt="Avatar">
+                <h3>Jefferson Soares</h3>
+                <p>Empresário</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Contratei a CearáBytes para a manutenção do meu notebook e a experiência foi excelente. O serviço foi rápido e eficiente, com uma explicação detalhada sobre o que foi feito. Com certeza voltarei para futuros serviços!"</p>
             </div>
-            <div class="service-item">
-                <h3>Limpeza e Troca de Pasta Térmica</h3>
-                <p>Evite superaquecimento e mantenha seu computador funcionando de maneira eficiente com nossos serviços de limpeza e troca de pasta térmica.</p>
+            <div class="testimonial">
+                <img src="./CSS/IMG/barbara_duarte_.jpg" class="avatar" alt="Avatar">
+                <h3>Roberta Meireles</h3>
+                <p>Advogada</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"A CearáBytes transformou o site da minha empresa com um design moderno e funcionalidades incríveis. O suporte técnico foi ágil e profissional. Agradeço pelo excelente trabalho e pela atenção aos detalhes."</p>
             </div>
-            <div class="service-item">
-                <h3>Venda de Acessórios</h3>
-                <p>Encontre uma variedade de acessórios para o setor de informática, incluindo mouses, teclados, cabos, adaptadores e muito mais.</p>
+            <div class="testimonial">
+                <img src="./CSS/IMG/homem2.jpg" class="avatar" alt="Avatar">
+                <h3>Kauan Meneses</h3>
+                <p>Contador</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Fiquei impressionada com a qualidade do serviço da CearáBytes. A equipe fez um trabalho impecável na formatação do meu PC e na instalação dos programas necessários. O atendimento foi cortês e eficiente!"</p>
             </div>
         </div>
     </section>
 
-    <hr class="separador">
-
-    <!-- titulo da secao -->
-    <section id="about" class="about">
-        <h2>Sobre Nós</h2>
-    </section>
-
-    <section id="about" class="background-about">
-        <div class="container">
-            <p>A CearáBytes é uma empresa dedicada a fornecer soluções completas e confiáveis para manutenção de computadores e desenvolvimento web. Fundada por Matheus Emmanuel Maciel Pontes, nossa missão é garantir que nossos clientes recebam o melhor atendimento e suporte técnico, utilizando as mais recentes tecnologias e práticas do mercado.</p>
-            <p>Estamos localizados em Ipueiras, Ceará, e atendemos clientes em toda a região, oferecendo serviços de alta qualidade e personalizados para atender às necessidades individuais de cada um.</p>
-            <p>Com uma equipe qualificada e comprometida, a CearáBytes se destaca pela excelência no serviço e pela satisfação dos nossos clientes.</p>
+    <section id="articles" class="articles">
+        <h2>Portfólio</h2>
+        <p>"Explore nossos projetos concluídos com excelência."</p>
+        <div class="articles-container">
+            <div class="article-card">
+                <img src="./CSS/IMG/MB Engenharia.png" alt="Article Image">
+                <h3>Site MB Engenharia</h3>
+                <p>Site da Engenheira Civil Maria Aline, na qual foi criada a identidade visual da empresa e o site da mesma com inclusão de Portfólio</p>
+                <button class="btn secondary-btn" onclick="window.location.href='https://mbengenharia.vercel.app';">View Project</button>
+            </div>
+            <div class="article-card">
+                <img src="./CSS/IMG/cearabytes ws.png" alt="Article Image">
+                <h3>CearáBytes WS</h3>
+                <p>Estação Meteorólogica criada pela própria CearáBytes para fins de estudo e auxílio na agricultura local, com construção da estação usando arduino e software próprio, podemos agora ajudar a agricultura local a saber qual a melhor plantação de acordo com a temperatura ambiente</p>
+                <button class="btn secondary-btn" onclick="window.location.href='https://estacao-meteorologica-jet.vercel.app';" >View Project</button>
+            </div>
+            <div class="article-card">
+                <img src="./CSS/IMG/pagina manutencao.png" alt="Article Image">
+                <h3>Página de Manutenção</h3>
+                <p>Página de manutenção temporária para sites, criado pela CearáBytes com uma identidade visual alinhada à marca. Perfeita para qualquer empresa que deseja efetuar manutenção em seu site e informar aos clientes quando a mesma vai voltar ao ar.</p>
+                <button class="btn secondary-btn" onclick="window.location.href='https://matheuspontes27.github.io/PAGINA-MANUTENCAO/';" >View Project</button>
+            </div>
         </div>
     </section>
 
-    <hr class="separador">
-
-    <section id="about" class="about">
-        <h2>Contato</h2>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <h2>Nossos Pacotes</h2><br>
+        <div class="pricing-cards">
+            <div class="card bronze">
+                <h3>Bronze</h3>
+                <p>Um pacote básico ideal para pequenas empresas ou profissionais autônomos que precisam de uma presença online simples e funcional.</p>
+                <h4>R$500</h4>
+                <button onclick="window.location.href='https://wa.me/+5588981757203';" >Teste Gratuito</button>
+                <p>
+                    • Layout Simples: Design clean e responsivo com até 3 páginas (Home, Sobre, Contato).<br><br>
+                    • Template Padrão: Uso de um template pré-definido, sem customizações avançadas.<br><br>
+                    • SEO Básico: Otimização básica para motores de busca (SEO).<br><br>
+                    • Formulário de Contato: Formulário simples com captura de dados para contato.<br><br>
+                    • Integração com Redes Sociais: Links para perfis de redes sociais.<br><br>
+                    • Hospedagem e Domínio Básico: Inclui configuração inicial de hospedagem e domínio por um ano.<br><br>
+                </p>
+            </div>
+            <div class="card prata">
+                <h3>Prata</h3>
+                <p>Para empresas em crescimento que precisam de um site mais robusto e com funcionalidades adicionais, como SEO e integração com redes sociais.</p>
+                <h4>R$700</h4>
+                <button onclick="window.location.href='https://wa.me/+5588981757203';" >Contratar !</button>
+                <p>
+                    • Design Personalizado: Layout customizado com até 5 páginas (Home, Sobre, Serviços, Blog, Contato).<br><br>
+                    •  SEO Intermediário: Otimização de SEO para palavras-chave específicas e configuração de Google Analytics.<br><br>
+                    • Blog Integrado: Área para publicação de artigos e atualizações da empresa.<br><br>
+                    • Otimização para Velocidade: Configuração para melhorar o desempenho e a velocidade do site.<br><br>
+                    • Galeria de Imagens e Portfólio: Seção para exibir trabalhos anteriores ou produtos.<br><br>
+                    • Formulário Avançado: Formulários com mais campos e opções de integração (e-mail marketing, CRM).<br><br>
+                    • Suporte Técnico por 6 Meses: Suporte técnico para ajustes e correções menores após a entrega.<br><br>
+                     * Taxa Mensal de R$50
+                </p>
+            </div>
+            <div class="card ouro">
+                <h3>Ouro</h3>
+                <p>Para grandes empresas ou projetos ambiciosos que exigem um site personalizado com recursos avançados e suporte prioritário.</p>
+                <h4>R$1000</h4>
+                <button onclick="window.location.href='https://wa.me/+5588981757203';" >Contratar !</button>
+                <p>
+                    • Design Exclusivo e Ilimitado: Layout totalmente personalizado com animações, efeitos visuais e um número ilimitado de páginas.<br><br>
+                    • SEO Avançado: Estratégia de SEO completa com análise de concorrentes, palavras-chave e relatórios mensais.<br><br>
+                    • Integração E-commerce: Loja virtual integrada com métodos de pagamento e carrinho de compras (se necessário).<br><br>
+                    • Chat de Atendimento: Integração de chat ao vivo para comunicação com clientes.<br><br>
+                    • Backup e Segurança Avançada: Configuração de backups automáticos e proteção contra malware.<br><br>
+                    • Suporte Técnico por 1 Ano: Suporte técnico contínuo, incluindo atualizações e ajustes de funcionalidades.<br><br>
+                    • Manutenção Mensal: Atualizações e manutenção mensal para manter o site sempre otimizado e seguro.<br><br>
+                     * Taxa Mensal de R$50
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="background-contato">
-        <div class="container">
-            <div class="contato-item">
-              <p>
-                <a href="https://www.instagram.com/cearabytes/" target="_blank">
-                    <img src="./instagram.png" width="50px" height="50px" alt="Instagram">
-                </a>
-              </p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Sobre a Empresa</h4>
+                <ul>
+                    <li><a href="./sobrenos.html" target="_blank">Sobre Nós</a></li>
+                    <li><a href="./trabalhe.html" target="_blank">Trabalhe Conosco</a></li>
+                </ul>
             </div>
-            <div class="contato-item">
-                <p>
-                  <a href="https://www.facebook.com/profile.php?id=61563199433038" target="_blank">
-                      <img src="./logotipo-do-aplicativo-do-facebook.png" width="50px" height="50px" alt="Facebook">
-                  </a>
-                </p>
+            <div class="footer-column">
+                <div class="redessociais">
+                <h4>Redes Sociais</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/matheusempontes/" target="_blank">
+                        <img src="./CSS/IMG/linkedin.png" alt="linkedin" style="width:40px;">
+                    </a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61563199433038" target="_blank">
+                        <img src="./CSS/IMG/facebook.png" alt="facebook" style="width:40px;">
+                    </a></li>
+                    <li><a href="https://wa.me/+5588981757203" target="_blank">
+                        <img src="./CSS/IMG/whatsapp.png" alt="whatsapp" style="width:40px;">
+                    </a></li>
+                    <li><a href="https://www.instagram.com/cearabytes/" target="_blank">
+                        <img src="./CSS/IMG/instagram.png" alt="instagram" style="width:40px;">
+                    </a></li>
+                </ul>
             </div>
-            <div class="contato-item">
-                <p>
-                  <a href="http://wa.me/5588981757203" target="_blank">
-                      <img src="./whatsapp.png" width="50px" height="50px" alt="Whatsapp">
-                  </a>
-                </p>
             </div>
-            <div class="contato-item">
-                <p>
-                  <a href="mailto:comercial@cearabytes.com.br" target="_blank">
-                      <img src="./e-mail (1).png" width="50px" height="50px" alt="Email">
-                  </a>
-                </p>
+            <div class="footer-column">
+                <h4>Entre em Contato</h4>
+                <ul>
+                    <li><i class="fa fa-phone"></i> (88) 9 8175-7203</li>
+                    <li><i class="fa fa-map-marker"></i> Rua Raimundo Nunes Moreira 131, Ipueiras/CE</li>
+                    <li><i class="fa fa-envelope"></i> comercial@cearabytes.com.br</li>
+                </ul>
             </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 CearáBytes. Todos os direitos reservados.</p>
-            <div class="social-media">
-                <!-- Ícones de redes sociais -->
+        </div>
+        <div class="footer-bottom">
+            <p>Todos os direitos reservados © 2024 CearáBytes</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
             </div>
         </div>
     </footer>
-
-    <script src="./script.js"></script>
-</body>
-</html>
-
+    
